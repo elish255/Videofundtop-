@@ -13,7 +13,7 @@
     <meta name="author" content="">
     <title>Payment details</title>
     <script src="js/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/main.css?rstr=532909801696">
     <link href="css/business-frontpage.css?rstr=532909801696" rel="stylesheet">
@@ -21,19 +21,125 @@
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/commonscripts.js"></script>
     <script type="text/javascript" src="js/geterrorcodes.js?new"></script>
+        <style>
+        body
+        html {
+            margin: 0;
+            padding: 0;
+            height: 90%;
+            font-family: Arial, sans-serif;
+            background-color: #d6d1d1;
+        }
+
+        .navbar {
+            background-color: #68162e;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .navbar-brand span {
+            color: blue;
+            /* Makes "Videofunds Activation" title blue */
+        }
+
+        #activation-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .icon {
+            font-size: 100px;
+            color: #51c921;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #68162e;
+            padding: 60px;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgb(255, 255, 255);
+        }
+
+        form input {
+            width: 90%;
+            padding: 8px 10px;
+            margin: 4px 0;
+            border: 3px solid #e43011;
+            border-radius: 5px;
+            font-size: 10px;
+        }
+
+        form input:focus {
+            outline: none;
+            border-color: #149210;
+            box-shadow: 0 0 5px rgba(221, 9, 9, 0.3);
+        }
+
+        .next-button {
+            width: 40%;
+            padding: 4px;
+            background-color: #c92121;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .next-button:hover {
+            background-color: #19860f;
+        }
+
+        #loading-icon {
+            display: none;
+            margin-top: 20px;
+            font-size: 24px;
+            color: #c92121;
+        }
+    </style>
+
 </head>
+<!-- Global site tag (gtag.js) -https://i.imgur.com/l8qcXqa.png Google Analytics -->
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-N7BJYK4G71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N7BJYK4G71');
+</script>-->
+
 
 <body background="images/background.jpg">
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="./">
+            
                 <font class="font9" style="font-weight:bold;font-size:25px;color:blue;">videofunds</font>
             </a>
-            <div class="d-lg-none d-md-block d-sm-block text-right">
-                <a class="nav-link" href="userarea.php">
-                    <div class="fa-address-card"> User area</div>
+            </div>
+        
+            
+           <h2> <div class="d-lg-none d-md-block d-sm-block text-right">
+                <a class="nav-link" href="/">
+                    <font class="font9" style="font-weight:bold;font-size:25px;color:blue;">User area</font>
+                
                 </a>
             </div>
+            </h2>
             
                     </li>
                 </ul>
@@ -54,9 +160,8 @@
 
     <!-- Page Content -->
     <div class="container">
-        <form name="payrecvf">
             <div class="row">
-                <div class="col text-center">
+                <div class="col-md-4 text-right text-center">
                     <font class="font9" style="font-size:22px;font-weight:bold;color:blue;">Enter Phone number</font><br>
                 </div>
             </div>
