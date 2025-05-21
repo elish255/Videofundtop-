@@ -11,7 +11,7 @@
     <meta property="og:url" content="https://youtube.com">
     <meta property="og:type" content="video">
     <meta name="author" content="">
-    <title>videofunds activation and withdrawal</title>
+    <title>Preparation for activation</title>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="css/main.css?rstr=532909801696">
     <link href="css/business-frontpage.css?rstr=532909801696" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
 
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script>
@@ -34,9 +33,9 @@
         html {
             margin: 0;
             padding: 0;
-            height: 100%;
+            height: 90%;
             font-family: Arial, sans-serif;
-            background-color: #5a9ee2;
+            background-color: #d6d1d1;
         }
 
         .navbar {
@@ -53,7 +52,7 @@
             /* Makes "Videofunds Activation" title blue */
         }
 
-        #home-container {
+        #activation-container {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -61,52 +60,44 @@
             min-height: 100vh;
             padding: 20px;
             text-align: center;
+            color: white;
         }
 
         .icon {
             font-size: 100px;
-            color: #c92121;
+            color: #51c921;
             margin-bottom: 20px;
         }
 
-        .global-icon {
-            font-size: 80px;
-            color: #007bff;
-            margin-bottom: 30px;
-        }
-
         form {
-            background-color: #5f1319;
+            background-color: #68162e;
             padding: 30px;
             width: 100%;
             max-width: 400px;
             border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            color: #ffffff;
+            box-shadow: 0 4px 10px rgb(255, 255, 255);
         }
 
-        form input,
-        form select {
-            width: 100%;
-            padding: 12px 15px;
-            margin: 10px 0;
-            border: 1px solid #dddddd;
+        form input {
+            width: 90%;
+            padding: 8px 10px;
+            margin: 4px 0;
+            border: 3px solid #e43011;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: 10px;
         }
 
-        form input:focus,
-        form select:focus {
+        form input:focus {
             outline: none;
-            border-color: #6e0b0b;
-            box-shadow: 0 0 5px rgba(110, 11, 11, 0.3);
+            border-color: #149210;
+            box-shadow: 0 0 5px rgba(221, 9, 9, 0.3);
         }
 
         .next-button {
             width: 40%;
-            padding: 7px;
+            padding: 4px;
             background-color: #c92121;
-            color: rgb(255, 255, 255);
+            color: white;
             border: none;
             border-radius: 5px;
             font-size: 18px;
@@ -116,7 +107,7 @@
         }
 
         .next-button:hover {
-            background-color: #0d8832;
+            background-color: #19860f;
         }
 
         #loading-icon {
@@ -124,14 +115,6 @@
             margin-top: 20px;
             font-size: 24px;
             color: #c92121;
-        }
-
-        select {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><polygon points="0,0 5,5 10,0" fill="gray"/></svg>') no-repeat scroll right center;
-            background-color: #f1f3f7;
         }
     </style>
 </head>
@@ -141,73 +124,78 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="./">
-                <span style="color: rgb(2, 2, 255);">Videofunds Activation africa</span>
+                <i class=""></i> 
+                <span style="color: rgb(2, 2, 255);">Videofunds</span>
             </a>
         </div>
     </nav>
 
-    <!-- Home Page Container -->
-    <div class="container" id="home-container">
-        <i class="fas fa-globe global-icon"></i>
-        <!-- Global Globe icon -->
+    <!-- Activation Container -->
+    <div class="container" id="activation-container">
+        <i class="fas fa-paper"></i>
+        <!-- Paper plane icon -->
 
-        <h3>Welcome to videofunds activation</h3>
-        <p>Please select your country to processing with the activation and withdrawal process.</p>
 
-        <!-- Country Selector Form -->
-        <form id="country-form">
-            <label for="country"><i class="fas fa-flag"></i> African Country only</label>
-            <select id="country" required>
-                <option value="">Select your country</option>
-                <!-- African Country options with flags -->
-                <option value="TZ" class="flag-icon-tz">Tanzania</option>
-                <option value="KE" class="flag-icon-ke">Kenya</option>
-                <option value="UG" class="flag-icon-ug">Uganda</option>
-                <option value="BI" class="flag-icon-bi">Burundi</option>
-                <option value="ZA" class="flag-icon-za">South Africa</option>
-                <option value="NG" class="flag-icon-ng">Nigeria</option>
-                <option value="GH" class="flag-icon-gh">Ghana</option>
-                <option value="ET" class="flag-icon-et">Ethiopia</option>
-                <option value="KE" class="flag-icon-ke">Kenya</option>
-                <option value="CM" class="flag-icon-cm">Cameroon</option>
-                <option value="CI" class="flag-icon-ci">Ivory Coast</option>
-                <option value="SN" class="flag-icon-sn">Senegal</option>
-                <option value="DZ" class="flag-icon-dz">Algeria</option>
-                <option value="UG" class="flag-icon-ug">zimbabwe</option>
-                <option value="ZA" class="flag-icon-za">South Africa</option>
-                <option value="MA" class="flag-icon-ma">Congo</option>
-                <option value="UG" class="flag-icon-ug">Malawi</option>
-                
-            </select>
 
-            <button id="continueBtn" type="submit" class="next-button">
-                <i class="fas fa-arrow-right"></i> Continue
+        <form id="activation-form">
+            <h3 class="text-dark"></h3>
+            <p>Please fill in the form below to activate your account.</p>
+
+            <div>
+                <label for="username"><i class="fas fa-user"></i> Username</label>
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+
+            <div>
+                <label for="adress"><i class="fas fa-map-marker"></i> Address</label>
+                <input type="text" id="adress" placeholder="Address" required>
+            </div>
+
+            <div>
+                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+
+            <div>
+                <label for="phone"><i class="fas fa-phone"></i> Phone number</label>
+                <input type="tel" id="phone" placeholder="Phone number" minlength="10" required>
+            </div>
+
+            <div>
+                <label for="fullName"><i class="fas fa-id-card"></i> Full Name</label>
+                <input type="text" id="fullName" placeholder="Full name" required>
+            </div>
+
+            <button id="nextBtn" type="submit" class="next-button">
+                <i class="fas fa-arrow-right"></i> Next
             </button>
 
-            <div id="loading-icon"><i class="fas fa-spinner fa-spin"></i> Loading...</div>
+            <div id="loading-icon"><i class="fas fa-spinner fa-spin"></i> Checking your Information.... </div>
         </form>
     </div>
 
     <!-- Script for Form Submission and Auto-Redirect -->
     <script>
-        document.getElementById("country-form").addEventListener("submit", function(event) {
+        document.getElementById("activation-form").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent form submission
 
             // Show loading icon
             document.getElementById("loading-icon").style.display = "block";
 
-            // Redirect to activation.html after 13 seconds
+            // Redirect to payout.html after 2 seconds
             setTimeout(function() {
-                const selectedCountry = encodeURIComponent(document.getElementById("country").value);
+                const username = encodeURIComponent(document.getElementById("username").value);
+                const email = encodeURIComponent(document.getElementById("email").value);
+                const phone = encodeURIComponent(document.getElementById("phone").value);
+                const fullName = encodeURIComponent(document.getElementById("fullName").value);
 
-                window.location.href = `activation.html?country=${selectedCountry}`;
-            }, 13000); // 13 seconds delay
+                window.location.href = `payout.html?username=${username}&email=${email}&phone=${phone}&fullName=${fullName}`;
+            }, 2000); // 2 seconds delay
         });
     </script>
 </body>
 
 </html>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -255,7 +243,7 @@
 <body>
 
     <!-- WhatsApp Button -->
-    <a href="https://wa.link/g1r9wu" target="_blank" class="whatsapp-button" title="Chat with us on WhatsApp">
+    <a href="https://wa.me/message/E6TSHPIIATXPG1" target="_blank" class="whatsapp-button" title="Chat with us on WhatsApp">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
     </a>
 
