@@ -27,7 +27,7 @@
             padding: 0;
             height: 90%;
             font-family: Arial, sans-serif;
-            background-color: #d6d1d1;
+            background-color: #68162e;
         }
 
         .navbar {
@@ -53,7 +53,7 @@
             min-height: 100vh;
             padding: 20px;
             text-align: center;
-            color: white;
+            color: darkred;
         }
 
         .icon {
@@ -68,7 +68,7 @@
             width: 100%;
             max-width: 400px;
             border-radius: 8px;
-            box-shadow: 0 4px 10px rgb(255, 255, 255);
+            box-shadow: 0 4px 10px rgb(darkred;
         }
 
         form input {
@@ -124,9 +124,9 @@
 
 <body >
  
- <nav class="navbar navbar-expand-lg fixed-top">
+<center> <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="./"><font class="font9" style="font-weight:bold;font-size:25px;color:blue;">Videofunds</font></a>
+      <a class="navbar-brand" href="https://videofunds.top/"><font class="font9" style="font-weight:bold;font-size:25px;color:blue;">Videofunds</font></a>
 
         
        
@@ -135,6 +135,7 @@
       </div>
     </div>
   </nav>
+  </center>
     <head>
         <!DOCTYPE html>
         <html lang="en">
@@ -150,14 +151,14 @@
                     font-family: Arial, sans-serif;
                     margin: 0;
                     padding: 0;
-                    background-color: #f4f4f4;
+                    background-color: darkred;
                 }
 
                 /* Welcome Container */
 
                 .welcome-container {
                     text-align: center;
-                    background: white;
+                    background:darkred;
                     padding: 20px;
                     border-radius: 8px;
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -191,7 +192,7 @@
                     margin-top: 20px;
                     padding: 10px 20px;
                     background-color: ;
-                    color: white;
+                    color:darkred;
                     text-decoration: none;
                     border-radius: 5px;
                 }
@@ -214,7 +215,7 @@
                 }
 
                 .Div_card {
-                    background-color: #fff;
+                    background-color: darkred;
                     border-radius: 15px;
                     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
                     overflow: hidden;
@@ -365,91 +366,162 @@
                     </div>
                 </div>
 
-                <!-- Information Card (New) -->
-                <div class="Div_card info-card">
-                    <header class="img4">
-                        <img src="information.png" alt="Information">
-                    </header>
-                    <div class="div_h"> FOLLOW INSTRUCTION BELOW</div>
-                    <div class="div_ol">
-                        <ol type="1">
-                            <l>CLICK THE WHATSAPP BOTTOM ON THE SCREEN THEN SEND THE INFORMATION REQUESTED BELOW</li>
-                                <li>Send Your Valid Email.</li>
-                                <li>Send The Wthdrawal Phone number</li>
-                                <li>Send The Number You paid For Activation</li>
-                                <li>Send Your Username That You Use on Videofunds.</li>
-                                <li>Then Wait 14 Minutes For The Process To Complete</li>
-                                <li>Go Back To Your Videofunds Account Refresh Page and You Will See ((active account ))</li>
-                                <li>Click on withdrawal bottom To withdrawal your funds</li>
 
+         <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transaction Verification</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #red;
+      margin: 0;
+      padding: 40px;
+    }
 
+    .container {
+      max-width: 400px;
+      margin: auto;
+      background-color: #fef2f2;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid #f87171;
+      box-shadow: 0 0 10px rgba(255,0,0,0.2);
+    }
 
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <!DOCTYPE html>
-            <html lang="en">
+    label, input, button {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+    }
 
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title></title>
-                <style>
-                    /* WhatsApp Button Style */
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #f87171;
+      border-radius: 5px;
+    }
 
-                    .whatsapp-button {
-                        position: fixed;
-                        /* Keeps the button fixed while scrolling */
-                        left: 10px;
-                        /* Adjust the distance from the left side */
-                        bottom: 10px;
-                        /* Adjust the distance from the bottom */
-                        z-index: 1000;
-                        /* Ensures the button is above other elements */
-                        background-color: #25D366;
-                        /* WhatsApp green color */
-                        padding: 10px;
-                        border-radius: 30px;
-                        /* Makes the button circular */
-                        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-                        transition: transform 0.3s ease;
-                    }
+    button {
+      padding: 10px;
+      background-color: #ef4444;
+      border: none;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      position: relative;
+    }
 
-                    /* WhatsApp Icon inside the Button */
+    .spinner {
+      border: 4px solid #ef4444;
+      border-top: 4px solid #b91c1c;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+      display: none;
+    }
 
-                    .whatsapp-button img {
-                        width: 30px;
-                        height: 30px;
-                    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
 
-                    /* Hover effect */
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.6);
+    }
 
-                    .whatsapp-button:hover {
-                        transform: scale(1.1);
-                        /* Slightly enlarge the button on hover */
-                    }
-                </style>
-            </head>
+    .modal-content {
+      background-color: #fef2f2;
+      margin: 15% auto;
+      padding: 30px;
+      width: 80%;
+      max-width: 400px;
+      border-radius: 10px;
+      text-align: center;
+      border: 2px solid #f87171;
+    }
 
-            <body>
+    .modal-content p {
+      color: #dc2626;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
 
-              <!-- WhatsApp Button -->
-    <a href="https://wa.me/+255743871339" target="_blank" class="whatsapp-button" title="Chat with us on WhatsApp">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    </a>
+    .modal-content button {
+      background-color: #ef4444;
+    }
+  </style>
+</head>
+<body>
 
-            </body>
+<div class="container">
+  <h2>Enter Transaction ID</h2>
+  <label for="transactionId">Transaction ID:</label>
+  <input type="text" id="transactionId" minlength="10" placeholder="e.g CEM9I5HQ5TT" required>
+  <button id="proceedBtn" onclick="verifyTransaction()">Proceed</button>
+  <div class="spinner" id="spinner"></div>
+</div>
 
-            </html>
-            </div>
+<!-- Modal -->
+<div id="popupModal" class="modal">
+  <div class="modal-content">
+    <p>Please wait for your payment transactions to be confirmed</p>
+    <button onclick="redirectToNextPage()">OK</button>
+  </div>
+</div>
 
-            <!-- Footer (Copyright Bar) -->
-            <div class="footer">
-                <p>&copy;
-                    <?php echo date("Y"); ?> Copyright © videofunds.top 2007-2025</p>
-            </div>
+<script>
+  function verifyTransaction() {
+    const input = document.getElementById('transactionId');
+    const transactionId = input.value.trim();
+    const spinner = document.getElementById('spinner');
 
-        </body>
+    if (transactionId.length < 10) {
+      alert('Transaction ID must be at least 10 characters long.');
+      return;
+    }
 
-        </html>
+    spinner.style.display = 'block'; // Show loading spinner
+    document.getElementById('proceedBtn').disabled = true;
+
+    // Simulate 10-second loading
+    setTimeout(() => {
+      spinner.style.display = 'none';
+      showModal();
+    }, 10000);
+  }
+
+  function showModal() {
+    const modal = document.getElementById('popupModal');
+    modal.style.display = 'block';
+  }
+
+  function redirectToNextPage() {
+    // Redirect to the next page (customize the link)
+    window.location.href = 'next-page.html';
+  }
+
+  // Prevent closing modal on outside click
+  window.addEventListener('click', function(event) {
+    const modal = document.getElementById('popupModal');
+    const content = modal.querySelector('.modal-content');
+    if (event.target === modal && !content.contains(event.target)) {
+      event.stopPropagation();
+    }
+  });
+</script>
+
+</body>
+</html>
